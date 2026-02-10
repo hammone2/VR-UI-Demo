@@ -12,7 +12,10 @@ public class Poppable : MonoBehaviour
         {
             //PopBalloon();
             if (popEnabled)
+            {
                 Destroy(gameObject);
+                ScoreTracker.Instance.score += 1;
+            }    
         }
     }
 
